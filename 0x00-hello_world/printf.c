@@ -4,11 +4,10 @@
  *
  *  *main - Entry point
  *
- *   *
+ *   
  *
  *    *Return: retun 1 after program execution
- *
- *     */
+ */
 
 int main(void)
 
