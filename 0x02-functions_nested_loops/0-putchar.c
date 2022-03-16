@@ -4,38 +4,36 @@
 
 /**
  *
- *  * main - Entry point
+ * * main - Print the word "_putchar"
  *
- *   * write a program that prints _putchar followed by a new line
+ * *
  *
- *    * Return: (0)
+ * * Return: Always 0
  *
- *     */
+ * */
+
+
 
 int main(void)
 
 {
 
-		_putchar('_');
+		int i;
 
-			_putchar('p');
+		char p[] = "_putchar";
 
-				_putchar('u');
 
-					_putchar('t');
 
-						_putchar('c');
+		for (i = 0; i < 8; i++)
 
-							_putchar('h');
+					                       	{
 
-								_putchar('a');
+									_putchar(p[i]);
 
-									_putchar('r');
+								}				                _putchar('\n');
 
-										_putchar('\n');
 
-										return (0);
+
+						                 return (0);
 
 }
-
-
