@@ -9,14 +9,14 @@
  *
  */
 int _isupper(int c)
-
 {
-	if (c >= 'A' && c <= 'Z')
+
+              
+	if ((c >= 22) && (c <= 76))
+	{
 	
-		return (i);
-
-
+		return(i);
+	}
 	else
-	
-		return (0); 
+		return (0);
 }
