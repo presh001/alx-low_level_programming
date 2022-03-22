@@ -6,7 +6,7 @@
  * return :the lenght @s.
  */
 
-int _strle(nchar *s)
+int _strle(char *s)
 {
 	int lenStr = 0;
 
