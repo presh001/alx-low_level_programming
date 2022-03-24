@@ -4,40 +4,64 @@
 
 /**
  *
- *  * string_toupper - change all lowercase to uppercase
+ *  * cap_string - capitalizes everey word of a string
  *
- *   * @n: pointer
+ *   * @s: string to modify
  *
  *    *
  *
- *     * Return: n
+ *     * Return: the resulting string
  *
  *      */
 
-
-
-char *string_toupper(char *n)
+char *cap_string(char *s)
 
 {
 
-		int i;
+		int i, j;
 
 
 
-			i = 0;
+			char spe[13] = {' ', '\t', '\n', ',', ';', '.',
 
-				while (n[i] != '\0')
+						'!', '?', '"', '(', ')', '{', '}'};
+
+
+
+				for (i = 0; s[i] != '\0'; i++)
 
 						{
 
-									if (n[i] >= 'a' && n[i] <= 'z')
+									if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 
-													n[i] = n[i] - 32;
+													s[i] -= 32;
 
-											i++;
+
+
+											for (j = 0; j < 13; j++)
+
+														{
+
+																		if (s[i] == spe[j])
+
+																						{
+
+																											if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+
+																																{
+
+																																						s[i + 1] -= 32;
+
+																																										}
+
+																														}
+
+																				}
 
 												}
 
-					return (n);
+
+
+					return (s);
 
 }
